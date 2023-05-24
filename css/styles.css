@@ -9,7 +9,8 @@
   --border-radius : 30px;
 }
 
-*, *::after,
+*,
+*::after,
 *::before{
     box-sizing: border-box;
 }
@@ -603,7 +604,10 @@ a {
 .block {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
-    border: 2px solid red;
+    
+}
+
+.block__header {
     text-align: center;
 }
 
@@ -628,4 +632,9 @@ a {
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
